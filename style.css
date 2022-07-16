@@ -1,0 +1,148 @@
+html,
+body {
+  height: 100%;
+  font-family: 'Open Sans', sans-serif;
+  /* background: burlywood; */
+  line-height: 1.5;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  min-height: 100%;
+  padding: 0 20px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: aqua;
+}
+main {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+}
+/* btn lang */
+.btns__lang {
+  width: 220px;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.img__block {
+  position: relative;
+
+  width: 250px;
+  height: 250px;
+}
+.img-cartoon {
+  position: absolute;
+  display: block;
+  max-width: 250px;
+  max-height: 250px;
+
+  animation-name: none;
+  animation-duration: 0.2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 3;
+  animation-direction: alternate;
+}
+
+@keyframes my-animation {
+  0% {
+    left: 0;
+    transform: rotate(15deg);
+  }
+
+  100% {
+    left: 0;
+    transform: rotate(-15deg);
+  }
+}
+.btn__block {
+  width: 500px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  flex-direction: row;
+  align-items: center;
+}
+.btn {
+  margin: 0 auto 15px;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  display: block;
+  position: relative;
+  background-color: #fcad26;
+  font-size: 16px;
+  font-weight: 300;
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  padding: 15px 30px;
+  border-radius: 20px;
+  box-shadow: 0 6px #efa424;
+}
+
+.btn:hover {
+  box-shadow: 0 4px #efa424;
+  top: 2px;
+}
+.btn:active {
+  box-shadow: none;
+  top: 6px;
+}
+
+.content {
+  margin-top: 30px;
+  max-width: 1000px;
+  height: 100px;
+  font-family: cursive;
+  color: hsl(210, 22%, 49%);
+  font-size: 24px;
+}
+.author {
+  min-height: 25px;
+  text-align: right;
+  font-weight: 600;
+  font-style: italic;
+  color: darkmagenta;
+}
+
+.footer {
+  height: 80px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-around;
+  align-items: center;
+}
+a {
+  display: flex;
+  width: 150px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-between;
+  align-items: center;
+}
+.img {
+  box-shadow: 0px -1px 20px 10px rgb(252 173 38);
+  background-color: rgb(252 173 38);
+}
